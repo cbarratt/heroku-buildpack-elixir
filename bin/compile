@@ -41,6 +41,7 @@ install_hex
 install_rebar
 
 pre_compile_hook
+pre_compile_git_config
 
 restore_app
 app_dependencies

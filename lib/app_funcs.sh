@@ -116,3 +116,10 @@ function write_export() {
 
   echo $export_line > $build_pack_path/export
 }
+
+function pre_compile_git_config() {
+  git config --global url."https://".insteadOf git://
+  git config --global url."https://github.com/".insteadOf ssh://git@github.com/
+  git config --global url."https://github.com/".insteadOf git@github.com:
+  git config --global url."https://github.com/".insteadOf git+ssh//git@github.com:
+}
